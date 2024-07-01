@@ -1,4 +1,5 @@
 #root {
+  position: relative;
   text-align: center;
 }
 
@@ -13,6 +14,12 @@
 #cartBtn:hover {
   background:black;
   color:white;
+}
+
+#navbar {
+  position: sticky;
+  top:0;
+  z-index: 99;
 }
 
 .body-header {
@@ -37,7 +44,12 @@
   width: 100%;
 }
 
+.cartbtn:hover {
+  background: black;
+  color: white;
+}
+
 .footer {
   width: 100%;
-  height:4rem;
+  height:8rem;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartBtn = () => {
   return (
-    <div>CartBtn</div>
+    <button className='btn border border-black cartbtn'>Add to Cart</button>
   )
 }
 

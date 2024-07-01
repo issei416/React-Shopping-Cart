@@ -20,49 +20,56 @@ function App() {
       productName: "Jordan Spizike Low",
       stars: 5,
       price: "$160",
-      inCart: false
+      inCart: false,
+      image : "./src/assets/shoe2.png"
     },
     {
       id: 3,
-      productName: "Nike Zoom GT cut 2",
+      productName: "Jordan Retro 5",
       stars: "",
-      price: "$150 - $170",
-      inCart: false
+      price: "$225",
+      inCart: false,
+      image:"/src/assets/shoe3.png"
     },
     {
-      id: "shoe1",
-      productName: "Nike Zoom GT cut 2",
+      id: 4,
+      productName: "Puma Miles Morales",
       stars: "",
-      price: "$150 - $170",
-      inCart: false
+      price: "$90",
+      inCart: false,
+      image:"/src/assets/shoe4.png"
     },
     {
-      id: "shoe1",
-      productName: "Nike Zoom GT cut 2",
+      id: 5,
+      productName: "Adidas originals Crazy 8",
       stars: "",
-      price: "$150 - $170",
-      inCart: false
+      price: "$140",
+      inCart: false,
+      image : "/src/assets/shoe5.png"
     },
     {
-      id: "shoe1",
-      productName: "Nike Zoom GT cut 2",
+      id: 6,
+      productName: "Under Armour HOVR splash 2",
       stars: "",
-      price: "$150 - $170",
-      inCart: false
+      price: "$110",
+      inCart: false,
+      image : "/src/assets/shoe6.png"
     },
     {
-      id: "shoe1",
-      productName: "Nike Zoom GT cut 2",
+      id: 7,
+      productName: "Timberland Field Boots",
       stars: "",
-      price: "$150 - $170",
-      inCart: false
+      price: "$120",
+      inCart: false,
+      image: "/src/assets/shoe7.png"
     },
     {
-      id: "shoe1",
-      productName: "Nike Zoom GT cut 2",
+      id: 8,
+      productName: "Polo Ralph Lauren low",
       stars: "",
-      price: "$150 - $170",
-      inCart: false
+      price: "$99.99",
+      inCart: false,
+      image : "/src/assets/shoe8.png"
     }
   ]
 
@@ -70,7 +77,7 @@ function App() {
     <>
       <Nav />
       <ShopBody products={ products } />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

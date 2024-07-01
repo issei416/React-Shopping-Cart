@@ -3,10 +3,10 @@ import TotalCartBtn from "./TotalCartBtn";
 
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary border border-dark" id="navbar">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+      <div className="container py-2 fs-5">
         <a className="navbar-brand" href="#">
-          logo
+          <img src="./src/assets/shoelogo.png" alt="logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -20,18 +20,20 @@ const Nav = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav w-100">
-            <li className="nav-item text-start ">
+          <ul className="navbar-nav w-100 ps-lg-3">
+            <li className="nav-item me-lg-4 text-start ">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a>
-            </li>
-            <li className="nav-item text-start ">
+                      </li>
+                      <hr />
+            <li className="nav-item me-lg-4 text-start ">
               <a className="nav-link" href="#">
                 About
               </a>
-            </li>
-            <li className="nav-item dropdown text-start ">
+                      </li>
+                      <hr />
+            <li className="nav-item me-lg-4 dropdown text-start ">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -61,7 +63,8 @@ const Nav = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+                      </li>
+                      <hr />
             <li className="nav-item ms-lg-auto">
               <TotalCartBtn />
             </li>
