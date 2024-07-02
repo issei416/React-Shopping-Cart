@@ -16,7 +16,7 @@ function App() {
       price: "$150 - $170",
       sale:"",
       inCart: false,
-      image : "src/assets/shoe1.png"
+      image : "/assets/shoe1.png"
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ function App() {
       price: "$180",
       sale:"$160",
       inCart: false,
-      image : "src/assets/shoe2.png"
+      image : "/assets/shoe2.png"
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ function App() {
       price: "$225",
       sale:"$200",
       inCart: false,
-      image:"src/assets/shoe3.png"
+      image:"/assets/shoe3.png"
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ function App() {
       price: "$90",
       sale:"",
       inCart: false,
-      image:"src/assets/shoe4.png"
+      image:"/assets/shoe4.png"
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ function App() {
       price: "$140",
       sale:"",
       inCart: false,
-      image : "src/assets/shoe5.png"
+      image : "/assets/shoe5.png"
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ function App() {
       price: "$110",
       sale:"",
       inCart: false,
-      image : "src/assets/shoe6.png"
+      image : "/assets/shoe6.png"
     },
     {
       id: 7,
@@ -70,7 +70,7 @@ function App() {
       price: "$130",
       sale:"$120",
       inCart: false,
-      image: "src/assets/shoe7.png"
+      image: "/assets/shoe7.png"
     },
     {
       id: 8,
@@ -79,7 +79,7 @@ function App() {
       price: "$125",
       sale:"$99.99",
       inCart: false,
-      image : "src/assets/shoe8.png"
+      image : "/assets/shoe8.png"
     }
   ]
 

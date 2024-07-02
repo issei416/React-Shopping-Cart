@@ -16,7 +16,7 @@ const ProductCard = ({
             <h4 className="card-title">{product.productName}</h4>
             <div className="card-text">
               {product.stars !== "" ? (
-                <img src="./src/assets/stars.png" className="starImg"></img>
+                <img src="/assets/stars.png" className="starImg"></img>
               ) : (
                 ""
               )}
