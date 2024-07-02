@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
 const CartBtn = ({ product, onCartUpdate }) => {
-    const [cart, setCart] = useState(product.inCart);
+    //useState for inCart variable
+    const [cart, setCart] = useState(product.inCart); 
 
+    
     const handleClick = () => {
         const updatedProduct = { ...product, inCart: !cart };
         setCart(!cart);

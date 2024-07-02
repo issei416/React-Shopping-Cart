@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 function App() {
 
-
+  // list of products to display
   let products = [
     {
       id: 1,
@@ -83,8 +83,10 @@ function App() {
     }
   ]
 
+  //using state on cart items based on inCart key in product opjetc 
   const [cartItems, setCartItems] = useState(products);
 
+  //update products upon any change in cart
   const handleCartUpdate = (updatedProduct) => {
     setCartItems((prevItems) =>
       prevItems.map((product) =>
