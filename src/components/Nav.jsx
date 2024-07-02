@@ -6,7 +6,7 @@ const Nav = ({cartItems}) => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
       <div className="container py-2 fs-5">
         <a className="navbar-brand" href="#">
-          <img src="../src/assets/shoelogo.png" alt="logo" />
+          <img src="src/assets/shoelogo.png" alt="logo" />
         </a>
         <button
           className="navbar-toggler"
