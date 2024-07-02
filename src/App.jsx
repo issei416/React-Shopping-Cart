@@ -2,9 +2,11 @@ import './App.css'
 import Footer from './components/Footer'
 import Nav from './components/Nav'
 import ShopBody from './components/ShopBody'
+import { useState } from 'react'
 
 
 function App() {
+
 
   let products = [
     {
@@ -12,6 +14,7 @@ function App() {
       productName: "Nike Zoom GT cut 2",
       stars: "",
       price: "$150 - $170",
+      sale:"",
       inCart: false,
       image : "./src/assets/shoe1.png"
     },
@@ -19,7 +22,8 @@ function App() {
       id: 2,
       productName: "Jordan Spizike Low",
       stars: 5,
-      price: "$160",
+      price: "$180",
+      sale:"$160",
       inCart: false,
       image : "./src/assets/shoe2.png"
     },
@@ -28,14 +32,16 @@ function App() {
       productName: "Jordan Retro 5",
       stars: "",
       price: "$225",
+      sale:"$200",
       inCart: false,
       image:"/src/assets/shoe3.png"
     },
     {
       id: 4,
       productName: "Puma Miles Morales",
-      stars: "",
+      stars: 5,
       price: "$90",
+      sale:"",
       inCart: false,
       image:"/src/assets/shoe4.png"
     },
@@ -44,6 +50,7 @@ function App() {
       productName: "Adidas originals Crazy 8",
       stars: "",
       price: "$140",
+      sale:"",
       inCart: false,
       image : "/src/assets/shoe5.png"
     },
@@ -52,31 +59,44 @@ function App() {
       productName: "Under Armour HOVR splash 2",
       stars: "",
       price: "$110",
+      sale:"",
       inCart: false,
       image : "/src/assets/shoe6.png"
     },
     {
       id: 7,
       productName: "Timberland Field Boots",
-      stars: "",
-      price: "$120",
+      stars: 5,
+      price: "$130",
+      sale:"$120",
       inCart: false,
       image: "/src/assets/shoe7.png"
     },
     {
       id: 8,
       productName: "Polo Ralph Lauren low",
-      stars: "",
-      price: "$99.99",
+      stars: 5,
+      price: "$125",
+      sale:"$99.99",
       inCart: false,
       image : "/src/assets/shoe8.png"
     }
   ]
 
+  const [cartItems, setCartItems] = useState(products);
+
+  const handleCartUpdate = (updatedProduct) => {
+    setCartItems((prevItems) =>
+      prevItems.map((product) =>
+        product.id === updatedProduct.id ? updatedProduct : product
+      )
+    );
+  };
+
   return (
     <>
-      <Nav />
-      <ShopBody products={ products } />
+      <Nav cartItems={ cartItems} />
+      <ShopBody products={products} cartItems={cartItems} setCartItems={setCartItems} onCartUpdate={ handleCartUpdate } />
       <Footer />
     </>
   )

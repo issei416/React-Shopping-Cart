@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const CartBtn = () => {
+const CartBtn = ({ product, onCartUpdate }) => {
+    const [cart, setCart] = useState(product.inCart);
+
+    const handleClick = () => {
+        const updatedProduct = { ...product, inCart: !cart };
+        setCart(!cart);
+        onCartUpdate(updatedProduct);
+      };
+    
   return (
-    <button className='btn border border-black cartbtn'>Add to Cart</button>
+      <button className='btn border border-black cartbtn' onClick={handleClick}>{ cart?"Remove from Cart":"Add to Cart" }</button>
   )
 }
 

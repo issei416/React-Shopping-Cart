@@ -7,13 +7,18 @@
   height:20px;
 }
 
-#cartBtn {
+#totalCartBtn {
   max-width: fit-content;
 }
 
-#cartBtn:hover {
+#totalCartBtn:hover {
   background:black;
   color:white;
+}
+
+.cartbtn:hover {
+  background: black;
+  color: white;
 }
 
 #navbar {
@@ -44,12 +49,27 @@
   width: 100%;
 }
 
-.cartbtn:hover {
-  background: black;
-  color: white;
+.starImg {
+  width:6rem;
+  object-fit: scale-down;
+}
+
+
+.cart-icon {
+  color: black;
+  font-size: 20px;
+}
+
+
+.letterspacing-2 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
 }
 
 .footer {
+  margin:0;
   width: 100%;
   height:8rem;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import TotalCartBtn from "./TotalCartBtn";
 
-const Nav = () => {
+const Nav = ({cartItems}) => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
       <div className="container py-2 fs-5">
@@ -66,7 +66,7 @@ const Nav = () => {
                       </li>
                       <hr />
             <li className="nav-item ms-lg-auto">
-              <TotalCartBtn />
+                          <TotalCartBtn cartItems={cartItems} />
             </li>
           </ul>
         </div>
